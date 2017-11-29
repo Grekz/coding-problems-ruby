@@ -12,7 +12,7 @@ class E002_AddTwoNumbers
     # @param {ListNode} l2
     # @return {ListNode}
     def add_two_numbers(l1, l2)
-        head = res = ListNode.new 0
+        head = res = ListNode.new(0)
         carry = sum = 0
         while carry > 0 || !l1.nil? || !l2.nil?
             sum = carry
