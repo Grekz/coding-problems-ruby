@@ -1,13 +1,13 @@
 class E002_AddTwoNumbers
     # Definition for singly-linked list.
-     class ListNode
-         attr_accessor :val, :next
-         def initialize(val)
-             @val = val
-             @next = nil
-         end
-     end
-    
+    class ListNode
+        attr_accessor :val, :next
+        def initialize(val)
+            @val = val
+            @next = nil
+        end
+    end
+
     # @param {ListNode} l1
     # @param {ListNode} l2
     # @return {ListNode}
@@ -16,11 +16,11 @@ class E002_AddTwoNumbers
         carry = sum = 0
         while carry > 0 || !l1.nil? || !l2.nil?
             sum = carry
-            ( 
+            (
                 sum += l1.val
                 l1 = l1.next
             ) if !l1.nil?
-            ( 
+            (
                 sum += l2.val
                 l2 = l2.next
             ) if !l2.nil?
@@ -31,7 +31,7 @@ class E002_AddTwoNumbers
                 carry = 0
             end
             res.next = ListNode.new sum
-            res = res.next        
+            res = res.next
         end
         head.next
     end
