@@ -8,7 +8,7 @@ class E235_LowestCommonAncestorofaBinarySearchTree
     #         @left, @right = nil, nil
     #     end
     # end
-    
+
     # @param {TreeNode} root
     # @param {TreeNode} p
     # @param {TreeNode} q
