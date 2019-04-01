@@ -1,5 +1,5 @@
 # @author grekz
-class E1013_PairsofSongsWithTotalDurationsDivisibleby60
+class E1010_PairsofSongsWithTotalDurationsDivisibleby60
     # @param {Integer[]} time
     # @return {Integer}
     def num_pairs_divisible_by60(time)
